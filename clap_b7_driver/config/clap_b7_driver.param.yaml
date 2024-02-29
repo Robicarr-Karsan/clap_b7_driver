@@ -9,11 +9,11 @@
       pub_standard_msgs: true # publish standard messages if true
       sub_rtcm_msgs: true # subscribe to RTCM messages if true
       rtcm_topic_name: "/sensing/gnss/ntrip/rtcm" # RTCM topic name
-      imu_topic: "clap/ros/imu" # IMU topic name
-      nav_sat_fix_topic: "clap/ros/gps_nav_sat_fix" # NavSatFix topic name
-      twist_topic: "clap/ros/twist_with_covariance_stamped" # TwistWithCovarianceStamped topic name
-      temperature_topic: "clap/ros/temperature" # Temperature topic name
-      autoware_orientation_topic: "clap/autoware_orientation"
+      imu_topic: "/sensing/gnss/clap/ros/imu" # IMU topic name
+      nav_sat_fix_topic: "/sensing/gnss/clap/ros/gps_nav_sat_fix" # NavSatFix topic name
+      twist_topic: "/sensing/gnss/clap/ros/twist_with_covariance_stamped" # TwistWithCovarianceStamped topic name
+      temperature_topic: "/sensing/gnss/clap/ros/temperature" # Temperature topic name
+      autoware_orientation_topic: "/sensing/gnss/clap/autoware_orientation"
 
     frame_config:
       gnss_frame: "GNSS_INS/gnss_ins_link" # GNSS frame name
